@@ -23,7 +23,7 @@
         <v-spacer></v-spacer>
 
         <v-toolbar-items>
-          <v-btn text to="/user"><v-icon>mdi-export-variant</v-icon>User</v-btn>
+          <v-btn text to="/login"><v-icon>mdi-export-variant</v-icon>User</v-btn>
           <v-btn text><v-icon>mdi-plus-circle</v-icon>Order</v-btn>
           <v-btn text><v-icon>mdi-export-variant</v-icon>Masseage</v-btn>
           <v-btn text><v-icon>mdi-export-variant</v-icon>Cart</v-btn>
@@ -145,12 +145,7 @@ export default {
   data () {
     return {
       
-      list: [
-        { title: 'Click Me' },
-        { title: 'Click Me' },
-        { title: 'Click Me' },
-        { title: 'Click Me 2' },
-      ],
+      
       items: [
           {
             title: 'all',
