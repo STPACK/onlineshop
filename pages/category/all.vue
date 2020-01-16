@@ -52,8 +52,12 @@
                 d-flex
                 md12
               >
-                <productList/>   
+                <productList
+                
+                :products="loadedPosts"
+                />
               </v-flex>
+              
 
         </v-layout>
       </v-flex>
@@ -72,24 +76,23 @@
 import BreadCrumbs from '@/components/menufile/breadCrumbs'
 import hotdeal from '@/components/category/hotdeal'
 import productList from '@/components/category/productList'
+import { store } from '@/store/store'
+
 export default {
+  store,
     components:{
         BreadCrumbs,hotdeal,productList
     },
     data: () => ({
-      breadC: [
-        {
-          text: 'Category',
-          disabled: false,
-          href: '/category/all',
-        },
-        {
-          text: 'all',
-          disabled: true,
-          href: '/category/all',
-        },
-      ],
+      
     }),
+    computed: {
+    loadedPosts() {
+      return this.$store.getters.pdList
+    }
+  }
+    
+    
 
     
 }

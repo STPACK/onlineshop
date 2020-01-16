@@ -154,7 +154,7 @@ export default {
           {
             title: 'Seafood',
             items: [
-              { title: 'Selmon'},
+              { title: 'Salmon'},
               { title: 'lobster'},
               { title: 'Uni'},
             ],
